@@ -1,0 +1,27 @@
+.cont_notFound_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 99vh;
+  margin: 0 auto;
+}
+
+.cont_notFound_page h2 {
+  font-size: 50px;
+  color: white;
+}
+
+.cont_notFound_page p {
+  font-size: 18px;
+}
+
+.cont_notFound_page button {
+  padding: 20px;
+  width: 200px;
+  color: white;
+  border: 0;
+  background-color: teal;
+}

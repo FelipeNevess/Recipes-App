@@ -1,0 +1,13 @@
+.recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  left: 0;
+  margin-top: 20px;
+  padding-bottom: 120px;
+  position: absolute;
+  width: 100%;
+}
+
+.recipes-list {
+  padding-top: 100px;
+}

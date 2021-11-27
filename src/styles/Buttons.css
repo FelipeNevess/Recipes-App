@@ -1,0 +1,33 @@
+.select-buttons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons {
+  background-color: rgb(9, 134, 156);
+  border: 1px solid rgb(9, 134, 156);
+color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 10px 20px 0;
+  outline: none;
+  transition: all 0.3s;
+  min-width: 70px;
+  height: 53px;
+}
+
+.buttons:hover {
+  background-color: rgb(246, 241, 255);
+  border: 1px solid rgb(9, 134, 156);
+  color: rgb(9, 134, 156);
+}
+
+.buttons-alignment {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

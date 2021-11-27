@@ -1,0 +1,12 @@
+.cont_drink_details {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.cont_drink_details ul {
+  margin-right: 40px;
+}

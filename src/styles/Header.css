@@ -1,0 +1,35 @@
+.header-container {
+  align-items: center;
+  background-color: rgb(145, 128, 179);
+  box-shadow: 0 5px 25px #0000003f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-buttons {
+  background-color: rgb(235, 223, 255);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 1px #00000070;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: all 0.3s;
+}
+
+.header-buttons:hover {
+  background-color: rgb(246, 241, 255);
+  transform: scale(0.9);
+}
+
+.header-title {
+  color: rgb(246, 241, 255);
+  margin: 0;
+  font-size: 20px;
+}
