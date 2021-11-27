@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/RecomendationCard.css';
 
 function RecomendationCard({ recipe, page, idx }) {
@@ -18,5 +19,11 @@ function RecomendationCard({ recipe, page, idx }) {
     </div>
   );
 }
+
+RecomendationCard.propTypes = {
+  recipe: PropTypes.objectOf(PropTypes.any),
+  page: PropTypes.string,
+  index: PropTypes.number,
+}.isRequired;
 
 export default RecomendationCard;
