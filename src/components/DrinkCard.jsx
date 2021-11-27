@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import '../styles/RecipeCard.css';
 
@@ -23,5 +24,9 @@ function DrinkCard({ index, recipe }) {
     </Link>
   );
 }
+
+DrinkCard.propTypes = {
+  index: PropTypes.number,
+}.isRequired;
 
 export default DrinkCard;
