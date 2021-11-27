@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import RecipesContext from './index';
 import * as comidasApi from '../services/comidasApi';
 import * as bebidasApi from '../services/bebidasApi';
@@ -13,17 +13,17 @@ function Provider({ children }) {
   const [foodCategories, setFoodCategories] = useState('');
   const [drinkCategories, setDrinkCategories] = useState('');
   const [ingredient, setIngredient] = useState('');
-  const navegate = useNavigate();
+  const history = useHistory();
 
   const condicionalFoodLenght = (results) => {
     if (results && results.length === 1) {
-      navegate.push(`/comidas/${results[0].idMeal}`);
+      history.push(`/comidas/${results[0].idMeal}`);
     }
   };
 
   const condicionalDrinkLenght = (results) => {
     if (results && results.length === 1) {
-      navegate.push(`/bebidas/${results[0].idDrink}`);
+      history.push(`/bebidas/${results[0].idDrink}`);
     }
   };
 

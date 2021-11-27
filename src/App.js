@@ -1,12 +1,12 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Login from './pages/Login';
 import Foods from './pages/Foods';
 import Drinks from './pages/Drinks';
 import FoodDetails from './pages/FoodDetails';
-import DrinkDetails from './pages/DrinkDetails';
+import DrinkDetails from './pages/DrinckDetails';
 import FoodProgress from './pages/FoodProgress';
-import DrinkProgress from './pages/DrinkProgress';
+import DrinkProgress from './pages/DrinckProgress';
 import Explore from './pages/Explore';
 import ExploreFood from './pages/ExploreFood';
 import ExploreDrinks from './pages/ExploreDrinks';
@@ -24,8 +24,8 @@ import './App.css';
 function App() {
   return (
     <Provider>
-      <Routes>
-        <Route exact path="/" component={ Login } />
+      <Switch>
+        <Route path="/" component={ Login } />
         <Route exact path="/comidas" component={ Foods } />
         <Route exact path="/bebidas" component={ Drinks } />
         <Route exact path="/comidas/:id" component={ FoodDetails } />
@@ -54,7 +54,7 @@ function App() {
         <Route exact path="/receitas-feitas" component={ RecipesMade } />
         <Route exact path="/receitas-favoritas" component={ FavoriteRecipes } />
         <Route path="*" component={ NotFound } />
-      </Routes>
+      </Switch>
     </Provider>
   );
 }

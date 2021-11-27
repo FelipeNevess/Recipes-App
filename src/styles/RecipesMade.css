@@ -1,0 +1,20 @@
+.recipes-list {
+  padding: 100px 20px 20px;
+}
+
+.recipe-done {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.instructions {
+  text-align: left;
+  text-justify: inter-word;
+}
+
+.ingredients-content {
+  text-align: left;
+  text-justify: inter-word;
+}
