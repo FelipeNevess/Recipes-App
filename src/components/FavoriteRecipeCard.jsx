@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { shareMealHelper } from '../services/helpers';
 import shareIcon from '../images/shareIcon.svg';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
@@ -74,5 +75,15 @@ function FavoriteRecipeCard({ recipe, index, handleClickNotFavorite }) {
   );
 }
 
+FavoriteRecipeCard.propTypes = {
+  recipe: PropTypes.object,
+  index: PropTypes.number,
+  category: PropTypes.string,
+  name: PropTypes.string,
+  image: PropTypes.string,
+  area: PropTypes.string,
+  alcoholicOrNot: PropTypes.string,
+  type: PropTypes.string,
+}.isRequired;
 
 export default FavoriteRecipeCard;
