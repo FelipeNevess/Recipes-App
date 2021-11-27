@@ -8,7 +8,6 @@ import shareIcon from '../images/shareIcon.svg';
 import whiteHeartIcon from '../images/whiteHeartIcon.svg';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
 import '../styles/Progress.css';
-import '../styles/PageDetails.css';
 
 function FoodProgress() {
   const [ingredients, setIngredients] = useState([]);
@@ -147,7 +146,7 @@ function FoodProgress() {
       <button
         type="button"
         data-testid="finish-recipe-btn"
-        className="iniciar-receita"
+        className="finalizar-receita"
         id="btn-finalizar-receita"
         onClick={ handleDoneRecipes }
         disabled={ !isActive }

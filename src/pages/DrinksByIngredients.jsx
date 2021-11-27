@@ -3,7 +3,7 @@ import { fetchAllDrinksIngredients } from '../services/bebidasApi';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import IngredientCard from '../components/IngredientCard';
-import '../styles/ExplorePages.css';
+import '../styles/DrinkByIngredients.css';
 
 const MAX_INGREDIENTS = 12;
 
@@ -23,7 +23,7 @@ const DrinksByIngredients = () => {
   return (
     <>
       <Header title="Explorar Ingredientes" />
-      <div className="container">
+      <div className="container3">
         { ingredients.map((ingredient, index) => (
           <IngredientCard
             key={ index }

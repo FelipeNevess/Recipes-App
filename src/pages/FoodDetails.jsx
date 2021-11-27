@@ -9,6 +9,7 @@ import shareIcon from '../images/shareIcon.svg';
 import whiteHeartIcon from '../images/whiteHeartIcon.svg';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
 import '../styles/PageDetails.css';
+import Exit from '../components/ExitFoods';
 
 const MAX_RECOMANDATION = 6;
 
@@ -71,6 +72,7 @@ function FoodDetails() {
     <div className="page-container">
       {(recipe.length === 1) && (
         <div>
+          <Exit comidas={ 'comidas' } />
           <img
             src={ recipe[0].strMealThumb }
             data-testid="recipe-photo"

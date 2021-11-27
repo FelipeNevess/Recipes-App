@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import MealCard from '../components/MealCard';
 import '../styles/ExplorePages.css';
+import '../styles/FoodByLocal.css';
 
 const MAX_RECIPES = 12;
 
@@ -49,23 +50,25 @@ const FoodByLocal = () => {
     <div>
       <Header title="Explorar Origem" hasSearchIcon />
 
-      <div className="container">
-        <select onChange={ handleChange } data-testid="explore-by-area-dropdown">
-          <option defaultValue="All" data-testid="All-option">All</option>
-          { areas.map((area, index) => (
-            <option
-              key={ index }
-              value={ area.strArea }
-              data-testid={ `${area.strArea}-option` }
-            >
-              { area.strArea }
-            </option>
-          )) }
-        </select>
+      <div className="container2">
+        <div className="section-food-cards">
+          <select onChange={ handleChange } data-testid="explore-by-area-dropdown">
+            <option defaultValue="All" data-testid="All-option">All</option>
+            { areas.map((area, index) => (
+              <option
+                key={ index }
+                value={ area.strArea }
+                data-testid={ `${area.strArea}-option` }
+              >
+                { area.strArea }
+              </option>
+            )) }
+          </select>
 
-        <div>
-          { meals && meals.slice(0, MAX_RECIPES).map((meal, index) => (
-            <MealCard key={ index } recipe={ meal } index={ index } />)) }
+          <div className="section-cards">
+            { meals && meals.slice(0, MAX_RECIPES).map((meal, index) => (
+              <MealCard key={ index } recipe={ meal } index={ index } />)) }
+          </div>
         </div>
       </div>
 

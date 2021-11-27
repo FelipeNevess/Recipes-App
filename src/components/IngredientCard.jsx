@@ -25,6 +25,7 @@ const IngredientCard = ({ ingredient, idx, page }) => {
     return (
       <button
         type="button"
+        className="buttons_profile"
         onClick={ () => sendToFoodsPage(ingredient.strIngredient) }
         data-testid={ `${idx}-ingredient-card` }
       >

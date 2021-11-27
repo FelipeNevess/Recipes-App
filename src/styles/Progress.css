@@ -19,14 +19,23 @@
 }
 
 .food-container {
+  display: flex;
   padding: 15px;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.food-container button {
-  margin-left: 10px;
+.food-container img {
+  border-radius: 50%;
 }
 
 .instructions {
   padding-bottom: 30px;
+}
+
+.btn {
+  margin-left: 10px;
+  border: 0;
+  background-color:rgb(101, 90, 124);
 }

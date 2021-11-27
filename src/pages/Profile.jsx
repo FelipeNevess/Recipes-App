@@ -32,7 +32,6 @@ function Profile() {
   return (
     <div>
       <Header title="Perfil" />
-
       <div className="container container-profile">
         <div className="text-email">
           <p data-testid="profile-email">{ email }</p>

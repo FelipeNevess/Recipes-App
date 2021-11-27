@@ -1,0 +1,10 @@
+.exit {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgb(50, 141, 157);
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  border: 0;
+  width: 40px;
+}

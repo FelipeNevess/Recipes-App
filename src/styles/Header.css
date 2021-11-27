@@ -3,6 +3,7 @@
   background-color: rgb(145, 128, 179);
   box-shadow: 0 5px 25px #0000003f;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   margin: 0 auto;
   padding: 10px 0;
@@ -30,4 +31,5 @@
 .header-title {
   color: rgb(246, 241, 255);
   margin: 0;
+  font-size: 20px;
 }

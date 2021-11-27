@@ -25,7 +25,7 @@ function App() {
   return (
     <Provider>
       <Switch>
-        <Route path="/" component={ Login } />
+        <Route exact path="/" component={ Login } />
         <Route exact path="/comidas" component={ Foods } />
         <Route exact path="/bebidas" component={ Drinks } />
         <Route exact path="/comidas/:id" component={ FoodDetails } />

@@ -5,10 +5,14 @@ import { fetchRecommendedMeals } from '../services/comidasApi';
 import { getIngredients, shareDrinkHelper } from '../services/helpers';
 import { favoriteDrinkRecipe } from '../services/localStorage';
 import RecomendationCard from '../components/RecomendationCard';
+import Exit from '../components/ExitDrinks';
+
 import shareIcon from '../images/shareIcon.svg';
 import whiteHeartIcon from '../images/whiteHeartIcon.svg';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
+
 import '../styles/PageDetails.css';
+import '../styles/DrinkDetails.css';
 
 const MAX_RECOMANDATION = 6;
 
@@ -68,14 +72,15 @@ function DrinkDetails() {
   const isDrinkDone = () => !!savedDoneRecipes[historyId];
 
   return (
-    <div>
+    <div className="cont_drink_details">
       { (recipe.length === 1) && (
         <div className="page-container">
+          <Exit bebidas={ 'bebidas' } />
           <img
             src={ recipe[0].strDrinkThumb }
             data-testid="recipe-photo"
             alt="Imagem da receita"
-            width="200"
+            width="200px"
           />
 
           <h1 data-testid="recipe-title">{ recipe[0].strDrink }</h1>
