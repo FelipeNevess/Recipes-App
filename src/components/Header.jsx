@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import propTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import searchIcon from '../images/searchIcon.svg';
 import profileIcon from '../images/profileIcon.svg';
@@ -41,5 +42,11 @@ function Header({ title, hasSearchIcon, page }) {
     </>
   );
 }
+
+Header.propTypes = {
+  title: propTypes.string,
+  hasSearchIcon: propTypes.bool,
+  page: propTypes.string,
+}.isRequired;
 
 export default Header;
