@@ -17,6 +17,8 @@ O projeto app de receitas foi um dos projetos em grupo desenvolvido durante meu 
 - Context API
 - React Router
 - Bootstrap
+- HTML5
+- CSS
 
 ##### Preparo:
 - https://www.figma.com/file/WatDxtKl7g54QxhDi9qdbq/App-Receitas
@@ -28,3 +30,11 @@ O projeto app de receitas foi um dos projetos em grupo desenvolvido durante meu 
 - https://github.com/EmmanuelBMS
 - https://github.com/FelipeNevess
 
+##### Como usar:
+- npm install
+- npm start
+
+##### Plicação:
+
+
+<p align="center">Obrigado!</p>
