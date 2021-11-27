@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import RecipesContext from '../context/index';
 import '../styles/HeaderSearchBar.css';
 
@@ -86,5 +87,10 @@ function HeaderSearchBar({ page, handleClickSearchBar }) {
     </form>
   );
 }
+
+HeaderSearchBar.propTypes = {
+  page: PropTypes.string,
+  handleClickSearchBar: PropTypes.func,
+}.isRequired;
 
 export default HeaderSearchBar;
