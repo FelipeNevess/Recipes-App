@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { shareMealHelper } from '../services/helpers';
 import shareIcon from '../images/shareIcon.svg';
 import '../styles/RecipeCard.css';
@@ -52,5 +53,14 @@ function DoneDrinkCard({ recipe, index }) {
     </div>
   );
 }
+
+DoneDrinkCard.propTypes = {
+  recipe: PropTypes.object,
+  index: PropTypes.number,
+  alcoholicOrNot: PropTypes.string,
+  name: PropTypes.string,
+  image: PropTypes.string,
+  doneDate: PropTypes.string,
+}.isRequired;
 
 export default DoneDrinkCard;
