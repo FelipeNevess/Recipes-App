@@ -38,7 +38,7 @@ O projeto app de receitas foi um dos projetos em grupo desenvolvido durante meu 
 - npm install
 - npm start
 
-##### Plicação:
+##### Aplicação:
 - https://appreceitas.netlify.app/
 
 <p align="center">Obrigado!</p>
