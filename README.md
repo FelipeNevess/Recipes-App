@@ -5,7 +5,7 @@
 <h2 align="center">A API ESTÁ UM POUCO INSTÁVEL</h2>
 <h4 align="center">Projeto totalmente feito para dispositivos mobile</h4>
 
-O projeto app de receitas foi um dos projetos em grupo desenvolvido durante meu período na trybe, com uma equipe de 5 pessoas. O intuído do projeto era desenvolver as hard skills e soft skills, mantendo a organização do código e a comunicação com a equipe
+O app de receitas foi um dos projetos em grupo desenvolvido durante meu período na trybe, com uma equipe de 5 pessoas. O objetivo do projeto era criar um App com varias paginas e funcionalidades diferentes, sem duvidas esse foi um dos maiores projeto que eu já desenvolvi. A comunicação e organização foi essencial pro desenvolvimento, todos deram seu melhor, tanto em soft-skills quanto hard-skills.
 
 ##### Aprendizagens:
 -   Utilizar Redux para gerenciar estado
