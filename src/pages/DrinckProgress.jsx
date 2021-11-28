@@ -8,6 +8,7 @@ import shareIcon from '../images/shareIcon.svg';
 import whiteHeartIcon from '../images/whiteHeartIcon.svg';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
 import '../styles/Progress.css';
+import '../styles/DrinkProgress.css';
 
 function DrinkProgress() {
   const [ingredients, setIngredients] = useState([]);
@@ -78,7 +79,7 @@ function DrinkProgress() {
   return (
     <div className="drink-container">
       {(recipe.length === 1) && (
-        <div>
+        <div className="con_drink_progress">
           <img
             src={ recipe[0].strDrinkThumb }
             data-testid="recipe-photo"
@@ -106,32 +107,34 @@ function DrinkProgress() {
       )}
 
       <h3>Ingredientes</h3>
-      {ingredients.map((ingredient, index) => (
-        <label
-          htmlFor={ `ingredient-${index}` }
-          data-testid={ `${index}-ingredient-step` }
-          key={ index }
-          className={ `${ingredientsSave.includes(ingredient) ? 'line-through' : ''}` }
-        >
-          <input
-            type="checkbox"
-            value={ ingredient }
-            id={ `ingredient-${index}` }
-            checked={ ingredientsSave.includes(ingredient) }
-            onChange={ () => handleLineThrough(ingredient) }
-          />
-          {ingredient}
-        </label>
-      ))}
+      <div className="ul_drink_options">
+        {ingredients.map((ingredient, index) => (
+          <label
+            htmlFor={ `ingredient-${index}` }
+            data-testid={ `${index}-ingredient-step` }
+            key={ index }
+            className={ `${ingredientsSave.includes(ingredient) ? 'line-through' : ''}` }
+          >
+            <input
+              type="checkbox"
+              value={ ingredient }
+              id={ `ingredient-${index}` }
+              checked={ ingredientsSave.includes(ingredient) }
+              onChange={ () => handleLineThrough(ingredient) }
+            />
+            {ingredient}
+          </label>
+        ))}
+      </div>
 
       <h3>Instruções</h3>
       {(recipe.length === 1)
-        && <p data-testid="instructions">{recipe[0].strInstructions}</p>}
+        && <p data-testid="instructions" className="text_description">{recipe[0].strInstructions}</p>}
 
       <button
         type="button"
         data-testid="finish-recipe-btn"
-        className="iniciar-receita"
+        className="btn_drink_recipe"
         id="btn-finalizar-receita"
         onClick={ handleDoneRecipes }
         disabled={ !isActive }

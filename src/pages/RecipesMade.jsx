@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
+
 import DoneMealCard from '../components/DoneMealCard';
 import DoneDrinkCard from '../components/DoneDrinkCard';
+
 import '../styles/RecipesMade.css';
 import '../styles/Buttons.css';
 

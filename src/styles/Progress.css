@@ -1,6 +1,5 @@
 .line-through {
   color: gray;
-  margin-top: 7px;
   text-align: left;
   text-decoration: line-through;
   text-justify: inter-word;
@@ -13,7 +12,6 @@
 }
 
 .n {
-  margin-top: 7px;
   text-align: left;
   text-justify: inter-word;
 }
