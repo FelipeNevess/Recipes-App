@@ -3,7 +3,9 @@ import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { shareMealHelper } from '../services/helpers';
 import shareIcon from '../images/shareIcon.svg';
+
 import '../styles/RecipeCard.css';
+import '../styles/DoneMealCard.css';
 
 function DoneDrinkCard({ recipe, index }) {
   const { id, alcoholicOrNot, name, image, doneDate } = recipe;
@@ -19,9 +21,29 @@ function DoneDrinkCard({ recipe, index }) {
   };
 
   return (
-    <div>
+    <div className="recipe-container drink_done">
+      <button
+        type="button"
+        onClick={ sendToDetailsPage }
+        className="image-btn img-drink-button"
+      >
+        <img
+          src={ image }
+          alt={ `foto de ${name}` }
+          data-testid={ `${index}-horizontal-image` }
+          width="80px"
+        />
+      </button>
+      <button
+        className="recipe-name-btn"
+        type="button"
+        onClick={ sendToDetailsPage }
+      >
+        <h2 data-testid={ `${index}-horizontal-name` }>{ name }</h2>
+      </button>
       <p>{messageAlert}</p>
       <button
+        className="share-btn"
         type="button"
         onClick={ shareRecipe }
       >
@@ -31,24 +53,7 @@ function DoneDrinkCard({ recipe, index }) {
           data-testid={ `${index}-horizontal-share-btn` }
         />
       </button>
-      <button
-        type="button"
-        onClick={ sendToDetailsPage }
-      >
-        <img
-          src={ image }
-          alt={ `foto de ${name}` }
-          data-testid={ `${index}-horizontal-image` }
-          width="80px"
-        />
-      </button>
       <p data-testid={ `${index}-horizontal-top-text` }>{ alcoholicOrNot }</p>
-      <button
-        type="button"
-        onClick={ sendToDetailsPage }
-      >
-        <h2 data-testid={ `${index}-horizontal-name` }>{ name }</h2>
-      </button>
       <p data-testid={ `${index}-horizontal-done-date` }>{`Feita em ${doneDate}`}</p>
     </div>
   );
