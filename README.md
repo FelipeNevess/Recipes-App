@@ -23,6 +23,7 @@ O app de receitas foi um dos projetos em grupo desenvolvido durante meu período
 - Bootstrap
 - HTML5
 - CSS
+- JavaScript
 
 ##### Preparo:
 - https://www.figma.com/file/WatDxtKl7g54QxhDi9qdbq/App-Receitas
